@@ -1,0 +1,54 @@
+$ sudo cat /var/log/syslog | grep -B 50 -A 1500 'fork:81046360' | grep replay_stage
+Jun  2 06:27:08 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:08.876644586Z INFO  solana_core::replay_stage] new fork:81046359 parent:81046358 root:81046291
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.194384482Z INFO  solana_core::replay_stage] bank frozen: 81046359
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.209850727Z INFO  solana_core::replay_stage] 9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs slot_weight: 81046359 0 0 81046358
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.209956060Z INFO  solana_core::replay_stage] voting: 81046359 0
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.212213310Z INFO  solana_core::replay_stage] vote bank: Some((81046359, SameFork)) reset bank: 81046359
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.216952975Z INFO  solana_core::replay_stage] DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp reset PoH to tick 5186967040 (within slot 81046359). My next leader slot is 81046360
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.216988683Z INFO  solana_core::replay_stage] new fork:81046360 parent:81046359 (leader) root:81046291
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.216994766Z INFO  solana_metrics::metrics] datapoint: replay_stage-new_leader slot=81046360i leader="DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp"
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.217006933Z INFO  solana_metrics::metrics] datapoint: replay_stage-my_leader_slot slot=81046360i
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.223126306Z INFO  solana_core::replay_stage] LEADER CHANGE at slot: 81046360 leader: DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp. I am now the leader
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.719676853Z INFO  solana_core::replay_stage] bank frozen: 81046360
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.746229094Z INFO  solana_core::replay_stage] 9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs slot_weight: 81046360 0 0 81046359
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.746267219Z INFO  solana_core::replay_stage] validator fork confirmed 81046356 3148ms
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.746282469Z INFO  solana_core::replay_stage] validator fork confirmed 81046358 1556ms
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.746314844Z INFO  solana_core::replay_stage] validator fork confirmed 81046359 863ms
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.746329761Z INFO  solana_core::replay_stage] validator fork confirmed 81046357 2059ms
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.746539052Z INFO  solana_core::replay_stage] voting: 81046360 0
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.749631926Z INFO  solana_core::replay_stage] new root 81046292
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.749826551Z INFO  solana_core::replay_stage] vote bank: Some((81046360, SameFork)) reset bank: 81046360
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.751697717Z INFO  solana_core::replay_stage] DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp reset PoH to tick 5186967104 (within slot 81046360). My next leader slot is 81046361
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.751721967Z INFO  solana_core::replay_stage] new fork:81046361 parent:81046360 (leader) root:81046292
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.751727717Z INFO  solana_metrics::metrics] datapoint: replay_stage-new_leader slot=81046361i leader="DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp"
+Jun  2 06:27:09 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:09.751738967Z INFO  solana_metrics::metrics] datapoint: replay_stage-my_leader_slot slot=81046361i
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.179587286Z INFO  solana_core::replay_stage] bank frozen: 81046361
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.194827239Z INFO  solana_core::replay_stage] 9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs slot_weight: 81046361 0 0 81046360
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.194917614Z INFO  solana_core::replay_stage] voting: 81046361 0
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.196999614Z INFO  solana_core::replay_stage] new root 81046293
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.276032588Z INFO  solana_core::replay_stage] vote bank: Some((81046361, SameFork)) reset bank: 81046361
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.281986836Z INFO  solana_core::replay_stage] DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp reset PoH to tick 5186967168 (within slot 81046361). My next leader slot is 81046362
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.282028128Z INFO  solana_metrics::metrics] datapoint: replay_stage-new_leader slot=81046362i leader="DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp"
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.282019128Z INFO  solana_core::replay_stage] new fork:81046362 parent:81046361 (leader) root:81046293
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.282040169Z INFO  solana_metrics::metrics] datapoint: replay_stage-my_leader_slot slot=81046362i
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.701730407Z INFO  solana_core::replay_stage] bank frozen: 81046362
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.715866736Z INFO  solana_core::replay_stage] 9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs slot_weight: 81046362 0 0 81046361
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.715963486Z INFO  solana_core::replay_stage] voting: 81046362 0
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.718091610Z INFO  solana_core::replay_stage] new root 81046294
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.831316574Z INFO  solana_core::replay_stage] vote bank: Some((81046362, SameFork)) reset bank: 81046362
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.831537073Z INFO  solana_core::replay_stage] DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp reset PoH to tick 5186967232 (within slot 81046362). My next leader slot is 81046363
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.831590782Z INFO  solana_core::replay_stage] new fork:81046363 parent:81046362 (leader) root:81046294
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.831596615Z INFO  solana_metrics::metrics] datapoint: replay_stage-new_leader slot=81046363i leader="DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp"
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.831605198Z INFO  solana_metrics::metrics] datapoint: replay_stage-my_leader_slot slot=81046363i
+Jun  2 06:27:10 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:10.840991237Z INFO  solana_core::replay_stage] new fork:81046364 parent:81046359 root:81046294
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.335944742Z INFO  solana_core::replay_stage] bank frozen: 81046364
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.385996268Z INFO  solana_core::replay_stage] bank frozen: 81046363
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.398131347Z INFO  solana_core::replay_stage] 9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs slot_weight: 81046363 0 0 81046362
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.402282221Z INFO  solana_core::replay_stage] 9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs slot_weight: 81046364 0 0 81046359
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.402432387Z INFO  solana_core::replay_stage] voting: 81046363 0
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.405552261Z INFO  solana_core::replay_stage] new root 81046295
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.412117259Z INFO  solana_core::replay_stage] vote bank: Some((81046363, SameFork)) reset bank: 81046363
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.417138258Z INFO  solana_core::replay_stage] DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp reset PoH to tick 5186967296 (within slot 81046363). My next leader slot is 81046652
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.417687466Z INFO  solana_core::replay_stage] new fork:81046365 parent:81046364 root:81046295
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.829564540Z INFO  solana_core::replay_stage] bank frozen: 81046365
+Jun  2 06:27:11 solana-production-lax solana-validator[32716]: [2021-06-02T06:27:11.855853615Z INFO  solana_core::replay_stage] 9GJmEHGom9eWo4np4L5vC6b6ri1Df2xN8KFoWixvD1Bs slot_weight: 81046365 0 0 81046364
